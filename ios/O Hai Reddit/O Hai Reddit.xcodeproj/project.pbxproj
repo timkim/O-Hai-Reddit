@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF89965D14E1E880005F7B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89965C14E1E880005F7B03 /* Foundation.framework */; };
+		BF89965F14E1E880005F7B03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89965E14E1E880005F7B03 /* UIKit.framework */; };
+		BF89966114E1E880005F7B03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966014E1E880005F7B03 /* CoreGraphics.framework */; };
+		BF89966314E1E880005F7B03 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966214E1E880005F7B03 /* AddressBook.framework */; };
+		BF89966514E1E880005F7B03 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966414E1E880005F7B03 /* AddressBookUI.framework */; };
+		BF89966714E1E880005F7B03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966614E1E880005F7B03 /* AudioToolbox.framework */; };
+		BF89966914E1E880005F7B03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966814E1E880005F7B03 /* AVFoundation.framework */; };
+		BF89966B14E1E880005F7B03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966A14E1E880005F7B03 /* CoreLocation.framework */; };
+		BF89966D14E1E880005F7B03 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966C14E1E880005F7B03 /* MediaPlayer.framework */; };
+		BF89966F14E1E880005F7B03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966E14E1E880005F7B03 /* QuartzCore.framework */; };
+		BF89967114E1E880005F7B03 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89967014E1E880005F7B03 /* SystemConfiguration.framework */; };
+		BF89967314E1E880005F7B03 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89967214E1E880005F7B03 /* MobileCoreServices.framework */; };
+		BF89967514E1E880005F7B03 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89967414E1E880005F7B03 /* CoreMedia.framework */; };
+		BF89967B14E1E880005F7B03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF89967914E1E880005F7B03 /* InfoPlist.strings */; };
+		BF89967D14E1E880005F7B03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89967C14E1E880005F7B03 /* main.m */; };
+		BF89968014E1E880005F7B03 /* PhoneGap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89967F14E1E880005F7B03 /* PhoneGap.framework */; };
+		BF89968514E1E880005F7B03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF89968314E1E880005F7B03 /* Localizable.strings */; };
+		BF89968914E1E880005F7B03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF89968714E1E880005F7B03 /* Localizable.strings */; };
+		BF89968C14E1E880005F7B03 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89968B14E1E880005F7B03 /* icon.png */; };
+		BF89968E14E1E880005F7B03 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89968D14E1E880005F7B03 /* icon@2x.png */; };
+		BF89969014E1E880005F7B03 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89968F14E1E880005F7B03 /* icon-72.png */; };
+		BF89969314E1E880005F7B03 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89969214E1E880005F7B03 /* Default.png */; };
+		BF89969514E1E880005F7B03 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89969414E1E880005F7B03 /* Default@2x.png */; };
+		BF89969714E1E880005F7B03 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF89969614E1E880005F7B03 /* Capture.bundle */; };
+		BF89969914E1E880005F7B03 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF89969814E1E880005F7B03 /* PhoneGap.plist */; };
+		BF89969D14E1E880005F7B03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89969C14E1E880005F7B03 /* AppDelegate.m */; };
+		BF8996A014E1E880005F7B03 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89969F14E1E880005F7B03 /* MainViewController.m */; };
+		BF8996A214E1E880005F7B03 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8996A114E1E880005F7B03 /* MainViewController.xib */; };
+		BF8996AB14E1E890005F7B03 /* www in Resources */ = {isa = PBXBuildFile; fileRef = BF8996AA14E1E890005F7B03 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF89965814E1E880005F7B03 /* O Hai Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O Hai Reddit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF89965C14E1E880005F7B03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF89965E14E1E880005F7B03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF89966014E1E880005F7B03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF89966214E1E880005F7B03 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		BF89966414E1E880005F7B03 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		BF89966614E1E880005F7B03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BF89966814E1E880005F7B03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BF89966A14E1E880005F7B03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BF89966C14E1E880005F7B03 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BF89966E14E1E880005F7B03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF89967014E1E880005F7B03 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BF89967214E1E880005F7B03 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BF89967414E1E880005F7B03 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BF89967814E1E880005F7B03 /* O Hai Reddit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "O Hai Reddit-Info.plist"; sourceTree = "<group>"; };
+		BF89967A14E1E880005F7B03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF89967C14E1E880005F7B03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF89967E14E1E880005F7B03 /* O Hai Reddit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "O Hai Reddit-Prefix.pch"; sourceTree = "<group>"; };
+		BF89967F14E1E880005F7B03 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
+		BF89968414E1E880005F7B03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF89968814E1E880005F7B03 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF89968B14E1E880005F7B03 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icons/icon.png; sourceTree = "<group>"; };
+		BF89968D14E1E880005F7B03 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icons/icon@2x.png"; sourceTree = "<group>"; };
+		BF89968F14E1E880005F7B03 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "Resources/icons/icon-72.png"; sourceTree = "<group>"; };
+		BF89969214E1E880005F7B03 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/splash/Default.png; sourceTree = "<group>"; };
+		BF89969414E1E880005F7B03 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
+		BF89969614E1E880005F7B03 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
+		BF89969814E1E880005F7B03 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
+		BF89969B14E1E880005F7B03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		BF89969C14E1E880005F7B03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		BF89969E14E1E880005F7B03 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		BF89969F14E1E880005F7B03 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		BF8996A114E1E880005F7B03 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
+		BF8996A414E1E880005F7B03 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		BF8996AA14E1E890005F7B03 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF89965214E1E880005F7B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89965D14E1E880005F7B03 /* Foundation.framework in Frameworks */,
+				BF89965F14E1E880005F7B03 /* UIKit.framework in Frameworks */,
+				BF89966114E1E880005F7B03 /* CoreGraphics.framework in Frameworks */,
+				BF89966314E1E880005F7B03 /* AddressBook.framework in Frameworks */,
+				BF89966514E1E880005F7B03 /* AddressBookUI.framework in Frameworks */,
+				BF89966714E1E880005F7B03 /* AudioToolbox.framework in Frameworks */,
+				BF89966914E1E880005F7B03 /* AVFoundation.framework in Frameworks */,
+				BF89966B14E1E880005F7B03 /* CoreLocation.framework in Frameworks */,
+				BF89966D14E1E880005F7B03 /* MediaPlayer.framework in Frameworks */,
+				BF89966F14E1E880005F7B03 /* QuartzCore.framework in Frameworks */,
+				BF89967114E1E880005F7B03 /* SystemConfiguration.framework in Frameworks */,
+				BF89967314E1E880005F7B03 /* MobileCoreServices.framework in Frameworks */,
+				BF89967514E1E880005F7B03 /* CoreMedia.framework in Frameworks */,
+				BF89968014E1E880005F7B03 /* PhoneGap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89965514E1E880005F7B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF89964A14E1E87F005F7B03 = {
+			isa = PBXGroup;
+			children = (
+				BF8996AA14E1E890005F7B03 /* www */,
+				BF89967614E1E880005F7B03 /* O Hai Reddit */,
+				BF89965B14E1E880005F7B03 /* Frameworks */,
+				BF89965914E1E880005F7B03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF89965914E1E880005F7B03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF89965814E1E880005F7B03 /* O Hai Reddit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF89965B14E1E880005F7B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF89965C14E1E880005F7B03 /* Foundation.framework */,
+				BF89965E14E1E880005F7B03 /* UIKit.framework */,
+				BF89966014E1E880005F7B03 /* CoreGraphics.framework */,
+				BF89966214E1E880005F7B03 /* AddressBook.framework */,
+				BF89966414E1E880005F7B03 /* AddressBookUI.framework */,
+				BF89966614E1E880005F7B03 /* AudioToolbox.framework */,
+				BF89966814E1E880005F7B03 /* AVFoundation.framework */,
+				BF89966A14E1E880005F7B03 /* CoreLocation.framework */,
+				BF89966C14E1E880005F7B03 /* MediaPlayer.framework */,
+				BF89966E14E1E880005F7B03 /* QuartzCore.framework */,
+				BF89967014E1E880005F7B03 /* SystemConfiguration.framework */,
+				BF89967214E1E880005F7B03 /* MobileCoreServices.framework */,
+				BF89967414E1E880005F7B03 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF89967614E1E880005F7B03 /* O Hai Reddit */ = {
+			isa = PBXGroup;
+			children = (
+				BF89967F14E1E880005F7B03 /* PhoneGap.framework */,
+				BF89968114E1E880005F7B03 /* Resources */,
+				BF89969A14E1E880005F7B03 /* Classes */,
+				BF8996A314E1E880005F7B03 /* Plugins */,
+				BF89967714E1E880005F7B03 /* Supporting Files */,
+			);
+			path = "O Hai Reddit";
+			sourceTree = "<group>";
+		};
+		BF89967714E1E880005F7B03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF89967814E1E880005F7B03 /* O Hai Reddit-Info.plist */,
+				BF89967914E1E880005F7B03 /* InfoPlist.strings */,
+				BF89967C14E1E880005F7B03 /* main.m */,
+				BF89967E14E1E880005F7B03 /* O Hai Reddit-Prefix.pch */,
+				BF89969814E1E880005F7B03 /* PhoneGap.plist */,
+				BF8996A114E1E880005F7B03 /* MainViewController.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF89968114E1E880005F7B03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF89969614E1E880005F7B03 /* Capture.bundle */,
+				BF89968214E1E880005F7B03 /* en.lproj */,
+				BF89968614E1E880005F7B03 /* es.lproj */,
+				BF89968A14E1E880005F7B03 /* icons */,
+				BF89969114E1E880005F7B03 /* splash */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BF89968214E1E880005F7B03 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BF89968314E1E880005F7B03 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		BF89968614E1E880005F7B03 /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BF89968714E1E880005F7B03 /* Localizable.strings */,
+			);
+			name = es.lproj;
+			sourceTree = "<group>";
+		};
+		BF89968A14E1E880005F7B03 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				BF89968B14E1E880005F7B03 /* icon.png */,
+				BF89968D14E1E880005F7B03 /* icon@2x.png */,
+				BF89968F14E1E880005F7B03 /* icon-72.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		BF89969114E1E880005F7B03 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				BF89969214E1E880005F7B03 /* Default.png */,
+				BF89969414E1E880005F7B03 /* Default@2x.png */,
+			);
+			name = splash;
+			sourceTree = "<group>";
+		};
+		BF89969A14E1E880005F7B03 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF89969B14E1E880005F7B03 /* AppDelegate.h */,
+				BF89969C14E1E880005F7B03 /* AppDelegate.m */,
+				BF89969E14E1E880005F7B03 /* MainViewController.h */,
+				BF89969F14E1E880005F7B03 /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BF8996A314E1E880005F7B03 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BF8996A414E1E880005F7B03 /* README */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF89965714E1E880005F7B03 /* O Hai Reddit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8996A714E1E880005F7B03 /* Build configuration list for PBXNativeTarget "O Hai Reddit" */;
+			buildPhases = (
+				BF89965114E1E880005F7B03 /* Sources */,
+				BF89965214E1E880005F7B03 /* Frameworks */,
+				BF89965314E1E880005F7B03 /* Resources */,
+				BF89965414E1E880005F7B03 /* Sources */,
+				BF89965514E1E880005F7B03 /* Frameworks */,
+				BF89965614E1E880005F7B03 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "O Hai Reddit";
+			productName = "O Hai Reddit";
+			productReference = BF89965814E1E880005F7B03 /* O Hai Reddit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF89964C14E1E87F005F7B03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = BF89964F14E1E87F005F7B03 /* Build configuration list for PBXProject "O Hai Reddit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+			);
+			mainGroup = BF89964A14E1E87F005F7B03;
+			productRefGroup = BF89965914E1E880005F7B03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF89965714E1E880005F7B03 /* O Hai Reddit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF89965314E1E880005F7B03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89967B14E1E880005F7B03 /* InfoPlist.strings in Resources */,
+				BF89968514E1E880005F7B03 /* Localizable.strings in Resources */,
+				BF89968914E1E880005F7B03 /* Localizable.strings in Resources */,
+				BF89968C14E1E880005F7B03 /* icon.png in Resources */,
+				BF89968E14E1E880005F7B03 /* icon@2x.png in Resources */,
+				BF89969014E1E880005F7B03 /* icon-72.png in Resources */,
+				BF89969314E1E880005F7B03 /* Default.png in Resources */,
+				BF89969514E1E880005F7B03 /* Default@2x.png in Resources */,
+				BF89969714E1E880005F7B03 /* Capture.bundle in Resources */,
+				BF89969914E1E880005F7B03 /* PhoneGap.plist in Resources */,
+				BF8996A214E1E880005F7B03 /* MainViewController.xib in Resources */,
+				BF8996AB14E1E890005F7B03 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF89965614E1E880005F7B03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\n\t\t\t\t\t\t\t\tif [ ! -d \"$PROJECT_DIR/www\" ] ; then\n\t\t\t\t\t\t\t\t\tcp -R /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework/www \"$PROJECT_DIR\"\n\t\t\t\t\t\t\t\tfi\n\t\t\t\t\t\t\t\t# detect www folder reference in project, if missing, print warning\n\t\t\t\t\t\t\t\tgrep \"{isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = \\\"<group>\\\"; };\" \"$PROJECT_DIR/$PROJECT_NAME.xcodeproj/project.pbxproj\"\n\t\t\t\t\t\t\t\trc=$? \n\t\t\t\t\t\t\t\tif [ $rc != 0 ] ; then\n\t\t\t\t\t\t\t\techo -e \"warning: Missing - Add $PROJECT_DIR/www as a folder reference in your project. Just drag and drop the folder into your project, into the Project Navigator of Xcode 4. Make sure you select the second radio-button: 'Create folder references for any added folders' (which will create a blue folder)\" 1>&2\n\t\t\t\t\t\t\t\tfi\t\t\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF89965114E1E880005F7B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89967D14E1E880005F7B03 /* main.m in Sources */,
+				BF89969D14E1E880005F7B03 /* AppDelegate.m in Sources */,
+				BF8996A014E1E880005F7B03 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89965414E1E880005F7B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF89967914E1E880005F7B03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF89967A14E1E880005F7B03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF89968314E1E880005F7B03 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF89968414E1E880005F7B03 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BF89968714E1E880005F7B03 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF89968814E1E880005F7B03 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8996A514E1E880005F7B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF8996A614E1E880005F7B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8996A814E1E880005F7B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "O Hai Reddit/O Hai Reddit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				INFOPLIST_FILE = "O Hai Reddit/O Hai Reddit-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF8996A914E1E880005F7B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "O Hai Reddit/O Hai Reddit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				INFOPLIST_FILE = "O Hai Reddit/O Hai Reddit-Info.plist";
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF89964F14E1E87F005F7B03 /* Build configuration list for PBXProject "O Hai Reddit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8996A514E1E880005F7B03 /* Debug */,
+				BF8996A614E1E880005F7B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8996A714E1E880005F7B03 /* Build configuration list for PBXNativeTarget "O Hai Reddit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8996A814E1E880005F7B03 /* Debug */,
+				BF8996A914E1E880005F7B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF89964C14E1E87F005F7B03 /* Project object */;
+}
