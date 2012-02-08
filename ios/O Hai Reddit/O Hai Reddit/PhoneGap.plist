@@ -50,6 +50,8 @@
 		<string>PGSplashScreen</string>
 		<key>com.phonegap.battery</key>
 		<string>PGBattery</string>
+		<key>childbrowsercommand</key>
+		<string>ChildBrowserCommand</string>
 	</dict>
 </dict>
 </plist>

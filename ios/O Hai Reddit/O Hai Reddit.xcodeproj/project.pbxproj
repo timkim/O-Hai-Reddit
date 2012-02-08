@@ -36,6 +36,10 @@
 		BF8996A014E1E880005F7B03 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89969F14E1E880005F7B03 /* MainViewController.m */; };
 		BF8996A214E1E880005F7B03 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8996A114E1E880005F7B03 /* MainViewController.xib */; };
 		BF8996AB14E1E890005F7B03 /* www in Resources */ = {isa = PBXBuildFile; fileRef = BF8996AA14E1E890005F7B03 /* www */; };
+		BF8996B314E31600005F7B03 /* ChildBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF8996AC14E31600005F7B03 /* ChildBrowser.bundle */; };
+		BF8996B514E31600005F7B03 /* ChildBrowserCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8996AF14E31600005F7B03 /* ChildBrowserCommand.m */; };
+		BF8996B614E31600005F7B03 /* ChildBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8996B114E31600005F7B03 /* ChildBrowserViewController.m */; };
+		BF8996B714E31600005F7B03 /* ChildBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8996B214E31600005F7B03 /* ChildBrowserViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,12 @@
 		BF8996A114E1E880005F7B03 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		BF8996A414E1E880005F7B03 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		BF8996AA14E1E890005F7B03 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		BF8996AC14E31600005F7B03 /* ChildBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ChildBrowser.bundle; sourceTree = "<group>"; };
+		BF8996AE14E31600005F7B03 /* ChildBrowserCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserCommand.h; sourceTree = "<group>"; };
+		BF8996AF14E31600005F7B03 /* ChildBrowserCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserCommand.m; sourceTree = "<group>"; };
+		BF8996B014E31600005F7B03 /* ChildBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildBrowserViewController.h; sourceTree = "<group>"; };
+		BF8996B114E31600005F7B03 /* ChildBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildBrowserViewController.m; sourceTree = "<group>"; };
+		BF8996B214E31600005F7B03 /* ChildBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildBrowserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +242,12 @@
 		BF8996A314E1E880005F7B03 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				BF8996AC14E31600005F7B03 /* ChildBrowser.bundle */,
+				BF8996AE14E31600005F7B03 /* ChildBrowserCommand.h */,
+				BF8996AF14E31600005F7B03 /* ChildBrowserCommand.m */,
+				BF8996B014E31600005F7B03 /* ChildBrowserViewController.h */,
+				BF8996B114E31600005F7B03 /* ChildBrowserViewController.m */,
+				BF8996B214E31600005F7B03 /* ChildBrowserViewController.xib */,
 				BF8996A414E1E880005F7B03 /* README */,
 			);
 			name = Plugins;
@@ -303,6 +319,8 @@
 				BF89969914E1E880005F7B03 /* PhoneGap.plist in Resources */,
 				BF8996A214E1E880005F7B03 /* MainViewController.xib in Resources */,
 				BF8996AB14E1E890005F7B03 /* www in Resources */,
+				BF8996B314E31600005F7B03 /* ChildBrowser.bundle in Resources */,
+				BF8996B714E31600005F7B03 /* ChildBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +350,8 @@
 				BF89967D14E1E880005F7B03 /* main.m in Sources */,
 				BF89969D14E1E880005F7B03 /* AppDelegate.m in Sources */,
 				BF8996A014E1E880005F7B03 /* MainViewController.m in Sources */,
+				BF8996B514E31600005F7B03 /* ChildBrowserCommand.m in Sources */,
+				BF8996B614E31600005F7B03 /* ChildBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

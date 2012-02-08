@@ -5,6 +5,7 @@
 
 	<meta charset="utf-8">
 	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/ChildBrowser.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jQuery.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/bootstrap.js"></script>
         
@@ -20,6 +21,17 @@
 	{
         $('#moarButton').button('loading');
         getMoar();
+        var root = this;
+        var cb = ChildBrowser.install();
+		if(cb != null)
+		{
+			cb.onLocationChange = function(loc){ root.locChanged(loc); };
+			cb.onClose = function(){root.onCloseBrowser()};
+			cb.onOpenExternal = function(){root.onOpenExternal();};
+
+			window.plugins.childBrowser.showWebPage("http://google.com");
+			
+		}
 	}
     
     </script>
