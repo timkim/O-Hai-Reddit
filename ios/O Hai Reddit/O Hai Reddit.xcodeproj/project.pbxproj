@@ -424,6 +424,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "O Hai Reddit/O Hai Reddit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "O Hai Reddit/O Hai Reddit-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -451,6 +452,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "O Hai Reddit/O Hai Reddit-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "O Hai Reddit/O Hai Reddit-Info.plist";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
