@@ -23,13 +23,14 @@
         getMoar();
         var root = this;
         var cb = ChildBrowser.install();
+        
 		if(cb != null)
 		{
 			cb.onLocationChange = function(loc){ root.locChanged(loc); };
 			cb.onClose = function(){root.onCloseBrowser()};
 			cb.onOpenExternal = function(){root.onOpenExternal();};
 
-			window.plugins.childBrowser.showWebPage("http://google.com");
+			//window.plugins.childBrowser.showWebPage("http://google.com");
 			
 		}
 	}
@@ -67,7 +68,7 @@
       
     <div id="tableContainer"> 
         <table id="theTable" class="table table-bordered table-striped">
-            <tr><th>Score</th><th>Title</th></tr>
+            <tr><th id="tableTitle">Front Page</th></tr>
         </table>
     </div>
     <div class="row">
