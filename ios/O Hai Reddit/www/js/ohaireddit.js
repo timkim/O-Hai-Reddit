@@ -48,6 +48,7 @@ var getComments = function(permalink){
                 var commentsLength = comments.length-1;
                 
                 // should think about making going into comment replies recursive
+                // oh god what is this ungodly horror of a function!?
                 for(var i=0;i<commentsLength;i++){
                     var workingCommentId = comments[i].data.id;
                     $('#masterComment').append('<li id="'+workingCommentId+'"><blockquote>'+comments[i].data.body+'<small>'+comments[i].data.author+' '+comments[i].data.ups+' points</small></blockquote></li>');
@@ -58,8 +59,23 @@ var getComments = function(permalink){
                         $('#'+workingCommentId).append('<ul></ul>');
                         var childReply = $('#'+workingCommentId +' ul');
                         for(var j=0;j<commentRepliesLength;j++){
-                            console.log('<li><blockquote>'+commentReplies[j].data.body+'<small>'+commentReplies[j].data.body+' '+commentReplies[j].data.body+' points</small></blockquote></li>');
-                            childReply.append('<li><blockquote>'+commentReplies[j].data.body+'<small>'+commentReplies[j].data.author+' '+commentReplies[j].data.ups+' points</small></blockquote></li>');
+                            var workingCommentReplyId = commentReplies[j].data.id;
+                            childReply.append('<li id="'+workingCommentReplyId+'"><blockquote>'+commentReplies[j].data.body+'<small>'+commentReplies[j].data.author+' '+commentReplies[j].data.ups+' points</small></blockquote></li>');
+                            
+                            // please... kill me
+                            // time to hand back my cs degree
+                            var commentRepliesReplies = commentReplies[j].data.replies.data.children;
+                            var commentRepliesRepliesLength = commentRepliesReplies.length-1;
+                            if(commentRepliesRepliesLength>0){
+                                $('#'+workingCommentReplyId).append('<ul></ul>');
+                                var childReplyReply = $('#'+workingCommentReplyId +' ul');
+                                for(var k=0;k<commentRepliesRepliesLength;k++){
+                                    var workingCommentReplyId = commentReplies[j].data.id;
+                                    childReplyReply.append('<li id="'+workingCommentReplyId+'"><blockquote>'+commentRepliesReplies[k].data.body+'<small>'+commentRepliesReplies[k].data.author+' '+commentRepliesReplies[k].data.ups+' points</small></blockquote></li>');
+                                }
+                            
+                            }
+                            
                         }
                     }
                 }
