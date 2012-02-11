@@ -34,7 +34,21 @@ var getMoar= function(qs){
         $('#moarButton').button('reset');
       }
     });
-}
+};
+
+var renderComments = function(comments,depth){
+    var commentHTML = '';
+    var commentLength = comments.length-1;
+    if(depth>=0){
+        for(var i=0;i<commentLength;i++){
+            commentHTML += '<li id="'+comments[i].data.id+'"><blockquote>'+comments[i].data.body+'<small>'+comments[i].data.author+' '+comments[i].data.ups+' points</small></blockquote></li>';
+            if(comments[i].data.replies && comments[i].data.replies.data.children.length!=0){
+                commentHTML += '<ul>' + renderComments(comments[i].data.replies.data.children,depth-1) + '</ul>';
+            }
+        }
+    }
+    return commentHTML;
+};
 
 var getComments = function(permalink){
     $('#commentContainer').show();
@@ -46,40 +60,9 @@ var getComments = function(permalink){
             if(data.length>1){
                 var comments = data[1].data.children;
                 var commentsLength = comments.length-1;
-                
-                // should think about making going into comment replies recursive
-                // oh god what is this ungodly horror of a function!?
-                for(var i=0;i<commentsLength;i++){
-                    var workingCommentId = comments[i].data.id;
-                    $('#masterComment').append('<li id="'+workingCommentId+'"><blockquote>'+comments[i].data.body+'<small>'+comments[i].data.author+' '+comments[i].data.ups+' points</small></blockquote></li>');
-                    
-                    var commentReplies = comments[i].data.replies.data.children;
-                    var commentRepliesLength = commentReplies.length-1;
-                    if(commentRepliesLength>0){
-                        $('#'+workingCommentId).append('<ul></ul>');
-                        var childReply = $('#'+workingCommentId +' ul');
-                        for(var j=0;j<commentRepliesLength;j++){
-                            var workingCommentReplyId = commentReplies[j].data.id;
-                            childReply.append('<li id="'+workingCommentReplyId+'"><blockquote>'+commentReplies[j].data.body+'<small>'+commentReplies[j].data.author+' '+commentReplies[j].data.ups+' points</small></blockquote></li>');
-                            
-                            // please... kill me
-                            // time to hand back my cs degree
-                            var commentRepliesReplies = commentReplies[j].data.replies.data.children;
-                            var commentRepliesRepliesLength = commentRepliesReplies.length-1;
-                            if(commentRepliesRepliesLength>0){
-                                $('#'+workingCommentReplyId).append('<ul></ul>');
-                                var childReplyReply = $('#'+workingCommentReplyId +' ul');
-                                for(var k=0;k<commentRepliesRepliesLength;k++){
-                                    var workingCommentReplyId = commentReplies[j].data.id;
-                                    childReplyReply.append('<li id="'+workingCommentReplyId+'"><blockquote>'+commentRepliesReplies[k].data.body+'<small>'+commentRepliesReplies[k].data.author+' '+commentRepliesReplies[k].data.ups+' points</small></blockquote></li>');
-                                }
-                            
-                            }
-                            
-                        }
-                    }
-                }
+                $('#masterComment').append(self.renderComments(comments,3));
             }
         }
     });
-}
+};
+
