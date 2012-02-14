@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF4F4DDE14EB041A00C20774 /* PGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F4DD514EB041A00C20774 /* PGTabBar.m */; };
+		BF4F4DDF14EB041A00C20774 /* PGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F4DD714EB041A00C20774 /* PGTabBarItem.m */; };
+		BF4F4DE014EB041A00C20774 /* PGToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F4DD914EB041A00C20774 /* PGToolBar.m */; };
+		BF4F4DE114EB041A00C20774 /* PGToolBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F4DDB14EB041A00C20774 /* PGToolBarItem.m */; };
+		BF4F4DE214EB041A00C20774 /* UIWebView+PGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F4DDD14EB041A00C20774 /* UIWebView+PGAdditions.m */; };
 		BF89965D14E1E880005F7B03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89965C14E1E880005F7B03 /* Foundation.framework */; };
 		BF89965F14E1E880005F7B03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89965E14E1E880005F7B03 /* UIKit.framework */; };
 		BF89966114E1E880005F7B03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF89966014E1E880005F7B03 /* CoreGraphics.framework */; };
@@ -43,6 +48,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF4F4DD414EB041A00C20774 /* PGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTabBar.h; sourceTree = "<group>"; };
+		BF4F4DD514EB041A00C20774 /* PGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGTabBar.m; sourceTree = "<group>"; };
+		BF4F4DD614EB041A00C20774 /* PGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTabBarItem.h; sourceTree = "<group>"; };
+		BF4F4DD714EB041A00C20774 /* PGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGTabBarItem.m; sourceTree = "<group>"; };
+		BF4F4DD814EB041A00C20774 /* PGToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGToolBar.h; sourceTree = "<group>"; };
+		BF4F4DD914EB041A00C20774 /* PGToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGToolBar.m; sourceTree = "<group>"; };
+		BF4F4DDA14EB041A00C20774 /* PGToolBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGToolBarItem.h; sourceTree = "<group>"; };
+		BF4F4DDB14EB041A00C20774 /* PGToolBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGToolBarItem.m; sourceTree = "<group>"; };
+		BF4F4DDC14EB041A00C20774 /* UIWebView+PGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+PGAdditions.h"; sourceTree = "<group>"; };
+		BF4F4DDD14EB041A00C20774 /* UIWebView+PGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+PGAdditions.m"; sourceTree = "<group>"; };
 		BF89965814E1E880005F7B03 /* O Hai Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O Hai Reddit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF89965C14E1E880005F7B03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF89965E14E1E880005F7B03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -118,6 +133,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF4F4DD314EB041A00C20774 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				BF4F4DD414EB041A00C20774 /* PGTabBar.h */,
+				BF4F4DD514EB041A00C20774 /* PGTabBar.m */,
+				BF4F4DD614EB041A00C20774 /* PGTabBarItem.h */,
+				BF4F4DD714EB041A00C20774 /* PGTabBarItem.m */,
+				BF4F4DD814EB041A00C20774 /* PGToolBar.h */,
+				BF4F4DD914EB041A00C20774 /* PGToolBar.m */,
+				BF4F4DDA14EB041A00C20774 /* PGToolBarItem.h */,
+				BF4F4DDB14EB041A00C20774 /* PGToolBarItem.m */,
+				BF4F4DDC14EB041A00C20774 /* UIWebView+PGAdditions.h */,
+				BF4F4DDD14EB041A00C20774 /* UIWebView+PGAdditions.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		BF89964A14E1E87F005F7B03 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +274,7 @@
 		BF8996A314E1E880005F7B03 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				BF4F4DD314EB041A00C20774 /* Menu */,
 				BF8996AC14E31600005F7B03 /* ChildBrowser.bundle */,
 				BF8996AE14E31600005F7B03 /* ChildBrowserCommand.h */,
 				BF8996AF14E31600005F7B03 /* ChildBrowserCommand.m */,
@@ -352,6 +385,11 @@
 				BF8996A014E1E880005F7B03 /* MainViewController.m in Sources */,
 				BF8996B514E31600005F7B03 /* ChildBrowserCommand.m in Sources */,
 				BF8996B614E31600005F7B03 /* ChildBrowserViewController.m in Sources */,
+				BF4F4DDE14EB041A00C20774 /* PGTabBar.m in Sources */,
+				BF4F4DDF14EB041A00C20774 /* PGTabBarItem.m in Sources */,
+				BF4F4DE014EB041A00C20774 /* PGToolBar.m in Sources */,
+				BF4F4DE114EB041A00C20774 /* PGToolBarItem.m in Sources */,
+				BF4F4DE214EB041A00C20774 /* UIWebView+PGAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +548,7 @@
 				BF8996A914E1E880005F7B03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

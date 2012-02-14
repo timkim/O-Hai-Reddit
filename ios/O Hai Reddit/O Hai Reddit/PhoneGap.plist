@@ -52,6 +52,14 @@
 		<string>PGBattery</string>
 		<key>childbrowsercommand</key>
 		<string>ChildBrowserCommand</string>
+		<key>com.phonegap.menu.context</key>
+		<string>PGTabBar</string>
+		<key>com.phonegap.menu.context.command</key>
+		<string>PGTabBarItem</string>
+		<key>com.phonegap.menu.toolbar</key>
+		<string>PGToolBar</string>
+		<key>com.phonegap.menu.toolbar.command</key>
+		<string>PGToolBarItem</string>
 	</dict>
 </dict>
 </plist>
