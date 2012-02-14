@@ -9,6 +9,7 @@ $('#moarButton').on('click',function(){
 });
 
 var getMoar= function(qs){
+    console.log('meep');
     qs = (qs?qs:'');
     $.ajax({
       url: 'http://reddit.com/.json',

@@ -93,7 +93,6 @@ var PGMenuElement = (function() {
                 exec.create(this, callback);
             },
             update: function(callback) {
-            console.log('tell em it gets to here');
                 var attributes = this.getAttributes();
 
                 // cannot do anything until PhoneGap has created the menu
@@ -357,11 +356,8 @@ var PGMenuElement = (function() {
         // Each menu will inturn manage its <command> elements.
         //
         update: function() {
-            console.log('tell');
             var elements = document.getElementsByTagName('menu');
-            console.log('me');
             asyncForEach(elements, function(element, callback) {
-                console.log('why');
                 var menu = new Menu(element);
 
                 menu.create(function() {

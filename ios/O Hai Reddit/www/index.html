@@ -12,7 +12,9 @@
     <script type="text/javascript" charset="utf-8" src="js/bootstrap.js"></script>
         
     <script type="text/javascript">
-
+        var callback = function() {
+            alert('whoa');
+        }
 	function onBodyLoad()
 	{		
 		document.addEventListener("deviceready", onDeviceReady, false);
@@ -21,29 +23,11 @@
 
 	function onDeviceReady()
 	{
-    
-        $('#moarButton').button('loading');
-        //getMoar();
-        $('#commentContainer').hide();
         var cb = ChildBrowser.install();
-  
-        var menu = document.createElement('menu');
-        
-menu.setAttribute('type', 'toolbar');
-document.body.appendChild(menu);
-
-var command = document.createElement('command');
-command.setAttribute('label', 'Home');
-command.setAttribute('action', function() {
-    console.log('Home');
-});
-menu.appendChild(command);
-
-// Refresh all menus
-
-console.log('yep');
-       PGMenuElement.update();
-    console.log('nope');
+        PGMenuElement.update();
+        $('#commentContainer').hide();
+        $('#moarButton').button('loading');
+        getMoar();
 	}
     
     </script>
@@ -52,29 +36,18 @@ console.log('yep');
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/ohaireddit.css" rel="stylesheet">
   </head>
-  <body onload="onBodyLoad()">
-  
-    <div id="navContainer" class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">O Hai Reddit</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+  <body onload="onBodyLoad()">      
+    <menu type="toolbar" label="O Hai Reddit">
+        <command label="Logout" action="callback()" />
+        <command label="back"   action="callback()" disabled="true" accesskey="back" />
+    </menu>
+
+    <menu type="context">
+        <command label="Home" icon="img/house.png" disabled="false" action="callback()" />
+        <command label="Settings"  icon="img/preferences.png" disabled="false" action="callback()" />
+    </menu> 
     
-      
+    
     <div id="tableContainer"> 
         <table id="theTable" class="table table-bordered table-striped">
             <tr><td colspan="2"><input type="text" class="input-large search-query" value="Front Page"><button type="submit" class="btn">Go</button></td></tr>
