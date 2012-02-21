@@ -9,7 +9,6 @@ $('#moarButton').on('click',function(){
 });
 
 var getMoar= function(qs){
-    console.log('meep');
     qs = (qs?qs:'');
     $.ajax({
       url: 'http://reddit.com/.json',
@@ -21,7 +20,7 @@ var getMoar= function(qs){
         nextPage = data.data.after;
         for(var i=0;i<j;++i){
             // should really template this godawful string out
-            $('#theTable').append('<tr><td id="'+children[i].data.id+'" data-url="'+children[i].data.url+'" class="redditLink"><a>'+children[i].data.title+'</a></td><td class="redditComment" data-permalink="'+children[i].data.permalink+'" rowspawn="2"><a class="btn" style="font-size:50%"><i class="icon-comment"></i>'+children[i].data.num_comments+'</a></td></tr><tr><td><span class="label label-warning">'+children[i].data.ups+'</span><span class="label label-info">'+children[i].data.subreddit+'</span><span class="label label-success">'+children[i].data.author+'</span></td></tr>');
+            $('#theTable').append('<tr class="redditLinkRow"><td id="'+children[i].data.id+'" data-url="'+children[i].data.url+'" class="redditLink"><a>'+children[i].data.title+'</a></td><td class="redditComment" data-permalink="'+children[i].data.permalink+'" rowspawn="2"><a class="btn" style="font-size:50%"><i class="icon-comment"></i>'+children[i].data.num_comments+'</a></td></tr><tr class="redditMetaInfoRow"><td><span class="label label-warning">'+children[i].data.ups+'</span><span class="label label-info">'+children[i].data.subreddit+'</span><span class="label label-success">'+children[i].data.author+'</span></td></tr>');
         }
        
         $('.redditLink').click(function(){
@@ -33,6 +32,7 @@ var getMoar= function(qs){
         });
         
         $('#moarButton').button('reset');
+        myScroll.refresh();
       }
     });
 };

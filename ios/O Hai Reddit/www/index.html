@@ -4,6 +4,7 @@
   <title></title>
 
 	<meta charset="utf-8">
+    <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
 	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.0.js"></script>  
     <script type="text/javascript" charset="utf-8" src="js/helper.js"></script>  
     <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
@@ -38,18 +39,14 @@
   </head>
   <body onload="onBodyLoad()">      
     <menu type="toolbar" label="O Hai Reddit">
+            <command label="Back" icon="img/plus.png" disabled="false" action="callback();" accesskey="back" />
         <command label="Logout" action="callback()" />
-        <command label="back"   action="callback()" disabled="true" accesskey="back" />
     </menu>
 
-    <menu type="context">
-        <command label="Home" icon="img/house.png" disabled="false" action="callback()" />
-        <command label="Settings"  icon="img/preferences.png" disabled="false" action="callback()" />
-    </menu> 
-    
+
     
     <div id="tableContainer"> 
-        <table id="theTable" class="table table-bordered table-striped">
+        <table id="theTable" class="table">
             <tr><td colspan="2"><input type="text" class="input-large search-query" value="Front Page"><button type="submit" class="btn">Go</button></td></tr>
         </table>
         <div class="row">

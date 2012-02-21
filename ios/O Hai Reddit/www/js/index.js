@@ -113,12 +113,14 @@ var PGMenuElement = (function() {
                 });
             },
             getAttributes: function() {
-                return {
-                    'pg-created': (element.getAttribute('pg-created') === 'true') || false,
+                var theAttr = {
+                   'pg-created': (element.getAttribute('pg-created') === 'true') || false,
                     'pg-id':      element.getAttribute('pg-id')                   || Id.next(),
                     'type':       element.getAttribute('type')                    || '',
                     'label':      element.getAttribute('label')                   || ''
                 };
+                
+                return theAttr;
             },
             setAttributes: function(attributes) {
                 for(var key in attributes) {
@@ -209,7 +211,7 @@ var PGMenuElement = (function() {
                     },
                     command.getService(),
                     'create',
-                    [attributes['pg-id']]
+                    [attributes['pg-id'],attributes['label'],attributes['icon'],attributes['disabled'],'command',attributes['accesskey']]
                 );
             },
             disabled: function(command, callback) {
@@ -306,7 +308,7 @@ var PGMenuElement = (function() {
                 });
             },
             getAttributes: function() {
-                return {
+                var theAttr = {
                     'pg-created': (element.getAttribute('pg-created') === 'true') || false,
                     'pg-id':      element.getAttribute('pg-id')                   || Id.next(),
                     'accesskey':  element.getAttribute('accesskey')               || '',
@@ -314,7 +316,8 @@ var PGMenuElement = (function() {
                     'disabled':   (element.getAttribute('disabled') === 'true')   || false,
                     'icon':       element.getAttribute('icon')                    || '',
                     'label':      element.getAttribute('label')                   || ''
-                };
+                }
+                return theAttr;
             },
             setAttributes: function(attributes) {
                 for(var key in attributes) {

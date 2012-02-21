@@ -105,8 +105,9 @@
     if ([options objectForKey:@"animate"]) {
         animateItems = [(NSString*)[options objectForKey:@"animate"] boolValue];
 	}
-    
+
     if ([accesskey isEqualToString:@"back"]) {
+
         if (!pgToolBar.toolBar.topItem.leftBarButtonItem) {
             pgToolBar.toolBar.topItem.leftBarButtonItem = item;
             [pgToolBar.toolBarItems setObject:item forKey:name];
@@ -124,8 +125,8 @@
 
 - (void) accesskey:(NSArray*)arguments withDict:(NSDictionary*)options {
     NSString*     callbackId   = [arguments objectAtIndex:0];
-    PluginResult* pluginResult = [PluginResult resultWithStatus: PGCommandStatus_OK];
     
+    PluginResult* pluginResult = [PluginResult resultWithStatus: PGCommandStatus_OK];
     [self writeJavascript:[pluginResult toSuccessCallbackString:callbackId]];
 }
 
@@ -147,6 +148,7 @@
     PluginResult* pluginResult = [PluginResult resultWithStatus: PGCommandStatus_OK];
     [self writeJavascript:[pluginResult toSuccessCallbackString:callbackId]];
 }
+
 
 /**
  * Update an existing toolbar item's title.
