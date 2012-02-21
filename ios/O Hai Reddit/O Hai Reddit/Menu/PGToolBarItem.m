@@ -29,21 +29,21 @@
     NSString*  imageName  = @"";
     BOOL       enable     = true;
     int        tag        = [name intValue];
-    
+
     @try {
         title     = [arguments objectAtIndex:2];
         imageName = [arguments objectAtIndex:3];
         enable    = [[arguments objectAtIndex:4] boolValue];
-        tag       = [[arguments objectAtIndex:5] intValue];
+        //tag       = [[arguments objectAtIndex:5] intValue];
     } @catch (NSException *exception) {
         // Move on
     }
-    
+
     NSString* accesskey = @"";
     if ([arguments count] > 6) {
         accesskey = [arguments objectAtIndex:6];
     }
-	
+
     UIBarButtonItem* item = nil;    
     if ([imageName length] > 0) 
 	{

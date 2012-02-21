@@ -16,6 +16,12 @@
         var callback = function() {
             alert('whoa');
         }
+        
+    var goBack = function(){
+        $('#masterComment').html('');
+        $('#commentContainer').hide();
+        $('#tableContainer').show();
+    }
 	function onBodyLoad()
 	{		
 		document.addEventListener("deviceready", onDeviceReady, false);
@@ -39,7 +45,7 @@
   </head>
   <body onload="onBodyLoad()">      
     <menu type="toolbar" label="O Hai Reddit">
-            <command label="Back" icon="img/plus.png" disabled="false" action="callback();" accesskey="back" />
+            <command id="backButton" label="Back" icon="img/plus.png" disabled="false" action="goBack();" accesskey="back" />
         <command label="Logout" action="callback()" />
     </menu>
 

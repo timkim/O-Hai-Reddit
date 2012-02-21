@@ -211,7 +211,7 @@ var PGMenuElement = (function() {
                     },
                     command.getService(),
                     'create',
-                    [attributes['pg-id'],attributes['label'],attributes['icon'],attributes['disabled'],'command',attributes['accesskey']]
+                    [attributes['pg-id'],attributes['label'],attributes['icon'],!attributes['disabled'],'command',attributes['accesskey']]
                 );
             },
             disabled: function(command, callback) {

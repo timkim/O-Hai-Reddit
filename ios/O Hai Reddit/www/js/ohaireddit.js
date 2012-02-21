@@ -58,6 +58,8 @@ var getComments = function(permalink){
         dataType: 'json',
         success: function(data){
             $('#tableContainer').hide();
+            $('#backButton').attr('disabled','false');
+            PGMenuElement.update();
             if(data.length>1){
                 var comments = data[1].data.children;
                 var commentsLength = comments.length-1;
@@ -66,4 +68,5 @@ var getComments = function(permalink){
         }
     });
 };
+
 
