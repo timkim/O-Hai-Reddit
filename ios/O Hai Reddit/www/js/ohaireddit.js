@@ -1,12 +1,14 @@
 var self = this;
 var nextPage = '';
-
+// TODO: need to css out inline styles
 var linkTMPL=['<tr class="redditLinkRow">',
-    '{{#thumbnail}}<a></a>{{/thumbnail}}',
-    '<td id="{{id}}" data-url="{{url}}" class="redditLink"><a>{{title}}</a>',
+    '<td id="{{id}}" data-url="{{url}}" class="redditLink">',
+        '{{#thumbnail}}<a style="float:left;width:50px;height:50px;margin: 0 5px;"><img src="{{thumbnail}}" /></a>{{/thumbnail}}',
+        '<a>{{title}}</a>',
+        '<p>{{domain}}</p>',
         '<div>',
-            '<span class="label label-warning">{{ups}}</span>',
-            '<span class="label label-info">{{subreddit}}</span>',
+            '<span class="label label-warning" style="margin-right:3px;">{{ups}}</span>',
+            '<span class="label label-info"style="margin-right:3px;">{{subreddit}}</span>',
             '<span class="label label-success">{{author}}</span>',
         '</div>',
     '</td>',
@@ -38,9 +40,10 @@ var getMoar= function(qs){
             // should really template this godawful string out
             var linkView = {
                 id: children[i].data.id,
-                thumbnail: null,
+                thumbnail: children[i].data.thumbnail!=''||children[i].data.thumbnail!=null?children[i].data.thumbnail:null,
                 url: children[i].data.url,
                 title: children[i].data.title,
+                domain: children[i].data.domain,
                 ups: children[i].data.ups,
                 subreddit: children[i].data.subreddit,
                 author: children[i].data.author,
@@ -62,7 +65,7 @@ var getMoar= function(qs){
         });
         
         $('#moarButton').button('reset');
-        myScroll.refresh();
+        
       }
     });
 };
